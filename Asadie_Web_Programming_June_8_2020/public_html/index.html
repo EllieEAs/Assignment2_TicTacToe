@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>QUIZ</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="CSS.css">
+    </head>
+    <body style="text-align: center">
+        <div id="question"><p>The author of Gone with the wind?</p>
+            <div id="options">
+                <form id="choice">
+                    <input id="choice1" type="radio" value="Margaret Mitchell"  name="Choice">
+                    <label id="choiceA">Margaret Mitchell</label><br>
+                    <input id="choice2" type="radio" value="Hattie McDaniel" name="Choice" >
+                    <label id="choiceB">Hattie McDaniel</label><br>
+                    <input id="choice3" type="radio" value="Neville LongJane Austen" name="Choice">
+                    <label id="choiceC">Jane Austen</label><br>
+                    <input id="choice4" type="radio" value="Charles Dickens" name="Choice">
+                    <label id="choiceD">Charles Dickens</label><br>
+                    <button id="submit_button" onClick="checkAnswer()">Submit</button>
+                    <button id="next_button" type="button" onClick="newQuestion()">Next</button>
+                </form>
+            </div>
+            <div id="footer">
+                <button id="myBtn">Help</button>
+                <div id="myModal" class="modal">
+                    <div class="modal-content">
+                          <span class="close">&times;</span>
+                        <p id="modal_msg">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aenean pharetra magna ac placerat vestibulum lectus mauris. </p>
+                    </div>
+                </div>
+                <input id="restart_btn" type="reset" value="Reset" onClick=""><br>
+                <input id="score_btn" type="button" value="Score" onClick=""><br>
+            </div>
+        </div>
+        <script type="text/javascript" src="JS2.js"></script>
+    </body>
+</html>
